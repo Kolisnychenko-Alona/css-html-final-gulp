@@ -1,0 +1,76 @@
+.footer {
+    width: 1440px;
+    border-top: 2px solid $button-color;
+    margin-top: 107px;
+
+    &_nav {
+        width: 940px;
+        height: 224px;
+        margin: 38px auto;
+        display: grid;
+        grid-template-columns: 230px 230px 230px 224px;
+        grid-template-rows: 224px;
+        grid-column-gap: 10px;
+
+        &_dreamshare {
+            font: {
+                family: "Montserrat", sans-serif;
+                style: normal;
+                weight: 400;
+                size: 16px;
+            }
+
+            line-height: 20px;
+            color: $button-color;
+        }
+
+        &_company_title {
+            font: {
+                family: "Montserrat", sans-serif;
+                style: normal;
+                weight: 700;
+                size: 14px;
+            }
+
+            line-height: 17px;
+            color: $darck-color;
+            margin-bottom: 11px;
+        }
+
+        &_company_menu {
+            font: {
+                family: "Robobto", sans-serif;
+                style: normal;
+                weight: 300;
+                size: 14px;
+            }
+
+            line-height: 26px;
+            color: #999999;
+        }
+
+        &_partners {
+            @extend .footer_nav_company_title;
+        }
+
+        &_logo_text {
+            font: {
+                family: "Montserrat", sans-serif;
+                style: normal;
+                weight: 700;
+                size: 10px;
+            }
+
+            line-height: 12px;
+            text-align: right;
+            letter-spacing: 1px;
+            color: #CCCCCC;
+        }
+
+        &_logo_icon {
+            @include size (110px, 24px);
+            margin-top: 7px;
+            margin-left: 110px;
+        }
+    }
+}

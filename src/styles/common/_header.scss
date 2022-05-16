@@ -1,0 +1,124 @@
+.header {
+    width: 1440px;
+    height: 700px;
+    background-image: url("../images/Background.png");
+    background-position: center;
+
+    &_top {
+        @include size(945px, 72px);
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin: 0 auto 153px;
+
+        &_logo {
+            font: {
+                family: "Montserrat", sans-serif;
+                style: normal;
+                weight: bold;
+                size: 19px;
+            }
+
+            line-height: 24px;
+            letter-spacing: 1px;
+            text-align: center;
+            color: $text-color;
+        }
+
+        &_button {
+            width: 154px;
+            display: flex;
+            margin-right: 43px;
+            margin-bottom: -6px;
+            justify-content: space-between;
+
+            &_log-in {
+                font: {
+                    family: "Montserrat", sans-serif;
+                    style: normal;
+                    weight: 300;
+                    size: 14px;
+                }
+
+                line-height: 35px;
+                text-align: center;
+                color: $text-color;
+                text-decoration: none;
+            }
+
+            &_sign-up {
+                @include size(90px, 36px);
+
+                font: {
+                    family: "Montserrat", sans-serif;
+                    style: normal;
+                    weight: 400;
+                    size: 14px;
+                }
+
+                line-height: 30px;
+                text-align: center;
+                border: 2px solid #ffffff;
+                box-sizing: border-box;
+                border-radius: 40px;
+                color: $text-color;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &_title {
+        @include size(500px, 126px);
+
+        font: {
+            family: "Montserrat", sans-serif;
+            style: normal;
+            weight: 700;
+            size: 51px;
+        }
+
+        line-height: 63px;
+        letter-spacing: 1px;
+        text-align: center;
+        margin: 0 auto;
+        color: $text-color;
+        margin-bottom: 28px;
+    }
+
+    &_text {
+        @include size (396px, 25px);
+
+        font: {
+            family: "Roboto", sans-serif;
+            style: normal;
+            weight: 300;
+            size: 24px;
+        }
+
+        line-height: 24px;
+        text-align: center;
+        margin: 0 auto 33px;
+        color: #F7F3F2;
+    }
+
+    &_button {
+        @include size (225px, 40px);
+
+        font: {
+            family: "Montserrat", sans-serif;
+            style: normal;
+            weight: 700;
+            size: 14px;
+        }
+
+        line-height: 17px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        background-color: $button-color;
+        color: $text-color;
+        border: none;
+        border-radius: 40px;
+
+    }
+}

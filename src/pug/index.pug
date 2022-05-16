@@ -1,0 +1,69 @@
+extends common/layout
+
+block content
+    main
+        .content
+            section.content_description
+                .content_description_title How Dreamshare works?
+                .content_description_steps
+                    .content_description_steps_article.step1
+                        button.content_description_steps_article_button STEP 1
+                        h2.content_description_steps_article_name
+                            | Sed leo enim, 
+                            br
+                            |  condimentum
+                        p.content_description_steps_article_text
+                            | Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.
+                    .content_description_steps_article.step2
+                        button.content_description_steps_article_button STEP 2
+                        h2.content_description_steps_article_name Morbi velit risus
+                        p.content_description_steps_article_text
+                            | Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.
+                    .content_description_steps_article.step3
+                        button.content_description_steps_article_button STEP 3
+                        h2.content_description_steps_article_name
+                            | Sed leo enim, 
+                            br
+                            |  condimentum
+                        p.content_description_steps_article_text
+                            | Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.
+            section.content_partners
+                h2.content_partners_title Meet a partner for your best holiday
+                .content_partners_cards
+                    .content_partners_cards_member
+                        .content_partners_cards_member_image.music
+                        h3.content_partners_cards_member_name Bradley Hunter
+                        p.content_partners_cards_member_text Based in Chicago. I love playing tennis and loud music.
+                    .content_partners_cards_member
+                        .content_partners_cards_member_image.art
+                        h3.content_partners_cards_member_name Marie Bennett
+                        p.content_partners_cards_member_text Currently living in Colorado. Lover of art, languages and travelling.
+                    .content_partners_cards_member
+                        .content_partners_cards_member_image.photo
+                        h3.content_partners_cards_member_name Diana Wells
+                        p.content_partners_cards_member_text
+                            | Living in Athens, Greece. I love black and white classics, chillout music and green tea.
+                    .content_partners_cards_member
+                        .content_partners_cards_member_image.travel
+                        h3.content_partners_cards_member_name Christopher Pierce
+                        p.content_partners_cards_member_text Star Wars fanatic. I have a persistent enthusiasm to create new things.
+                button.content_partners_button See other partners
+            section.content_ideas
+                h2.content_ideas_title Discover holiday activity ideas
+                .content_ideas_activitis
+                    .content_ideas_activitis_choice.sports Sports and Activis
+                    .content_ideas_activitis_choice.wellness Wellness and Health
+                    .content_ideas_activitis_choice.extreme
+                        | Extreme Sports
+                        br
+                        | and Expeditions
+                    .content_ideas_activitis_choice.games Games
+                    .content_ideas_activitis_choice.culture Culture and Education
+                    .content_ideas_activitis_choice.relaxation Enjomet and Relaxation
+                    .content_ideas_activitis_choice.trevelling Trevelling
+            section.content_interaction
+                h2.content_interaction_title Crate your holiday activity
+                p.content_interaction_question Hi! What are your holiday interests?
+                form.content_interaction_answer(action='')
+                    input.content_interaction_answer_text(type='text' placeholder='Enter your insterests')
+                    button.content_interaction_answer_button(type='button') Search partners
